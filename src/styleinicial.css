@@ -4,7 +4,7 @@
     margin: 0px;
     padding: 0px;
   }
-  
+
   header {
     height: 60px;
     background: black;
@@ -12,7 +12,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  
+
   section.cabecalho {
     width: 100%;
     display: flex;
@@ -21,14 +21,14 @@
     max-width: 1000px;
     margin: 0 auto;
   }
-  
+
   nav {
     width: 100%;
     display: flex;
     justify-content: jus;
     align-items: center;
   }
-  
+
   nav a {
     margin: 0 1.5em;
     text-transform: uppercase;
@@ -36,28 +36,26 @@
     text-decoration: none;
     color: rgb(226, 225, 223);
     cursor: pointer;
-    
+
   }
-  
+
   nav a:hover {
     color: rgb(230, 220, 89);
   }
-  
+
   .nav-list{
     list-style: none;
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    
   }
- 
 
   .logo-cab {
     width: 40px;
     margin-right: 3em;
     margin-left: 1.5em;
   }
-  
+
   .label-menu,
  .checkbox {
   display: none;
@@ -121,9 +119,6 @@
     transform: rotate(-135deg);
     top: -0.4375rem;
   }
-
-
-
 }
 
 .video-container {
@@ -134,7 +129,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  
+
 }
 
 #bg-video {
