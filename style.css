@@ -293,7 +293,7 @@ li:hover{
   }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
   #buscar{
     outline: 0;
     width: 60px;
