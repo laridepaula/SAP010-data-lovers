@@ -13,6 +13,8 @@
 
 Este projeto consiste no desenvolvimento de uma página web que serve como um inventário dos campeões do jogo League of Legends (LoL). O objetivo é fornecer aos usuários informações sobre as habilidades e funções de cada campeão, permitindo que eles conheçam melhor o jogo e façam escolhas estratégicas.
 
+Acesse nosso projeto em ('https://laridepaula.github.io/SAP010-data-lovers/')
+
 ## 2.Protótipo
 
 Durante o processo de desenvolvimento, foram criados protótipos de baixa e alta fidelidade para visualizar a interface do usuário e testar sua usabilidade. As iterações e os rascunhos do protótipo podem ser encontrados nas imagens a seguir:
@@ -46,31 +48,53 @@ Para utilizar o inventário dos campeões de League of Legends, siga as instruç
 ## 5.Histórias de Usuário:
 
 1.Como jogador interessado em conhecer os campeões do jogo League of Legends, gostaria de poder visualizar uma lista de campeões para conhecer suas habilidades e funções.
+
  *Critérios de Aceitação:
+
    [ ]A lista de campeões deve ser exibida na tela.
+
    [ ]Cada campeão deve ser apresentado com seu nome e imagem.
+
    [ ]Ao clicar em um campeão, as informações detalhadas do mesmo devem ser exibidas.
 
+
 2.Como jogador que deseja explorar os campeões de uma categoria específica, gostaria de poder filtrar os campeões por função (lutador, atirador, mago, assassino, tanque, suporte).
+
  *Critérios de Aceitação:
-   [ ]Deve haver um menu de filtros com as opções de função.
-   [ ]Ao selecionar uma função, a lista de campeões deve ser atualizada para exibir apenas os campeões correspondentes à função selecionada.
+
+   [x]Deve haver um menu de filtros com as opções de função.
+
+   [x]Ao selecionar uma função, a lista de campeões deve ser atualizada para exibir apenas os campeões correspondentes à função selecionada.
+
 
 3.Como jogador que deseja encontrar um campeão específico, gostaria de poder pesquisar pelo nome do campeão na lista.
+
  *Critérios de Aceitação:
-   [ ]Deve haver um campo de pesquisa onde o jogador possa digitar o nome do campeão.
-   [ ]Ao digitar o nome do campeão, a lista de campeões deve ser atualizada para exibir apenas os campeões cujo nome corresponde à pesquisa.
+   [x]Deve haver um campo de pesquisa onde o jogador possa digitar o nome do campeão.
+
+   [x]Ao digitar o nome do campeão, a lista de campeões deve ser atualizada para exibir apenas os campeões cujo nome corresponde à pesquisa.
+
 
 4.Como jogador que deseja ter uma visão geral das estatísticas dos campeões, gostaria de visualizar um gráfico com a distribuição dos campeões por função.
+
  *Critérios de Aceitação:
-   [ ]Deve ser exibido um gráfico mostrando a porcentagem de campeões em cada função.
+
+   [x]Deve ser exibido um gráfico mostrando a porcentagem de campeões em cada função.
+
 
 5.Como jogador que utiliza dispositivos móveis, gostaria que o site fosse responsivo para que eu possa acessá-lo em diferentes tamanhos de tela.
+
  *Critérios de Aceitação:
-   [ ]O site deve ser visualizado corretamente em dispositivos móveis, como smartphones e tablets.
-   [ ]Todos os elementos da página devem se adaptar ao tamanho da tela de forma adequada.
+
+   [x]O site deve ser visualizado corretamente em dispositivos móveis, como smartphones e tablets.
+
+   [x]Todos os elementos da página devem se adaptar ao tamanho da tela de forma adequada.
+
 
 6.Como jogador que valoriza a experiência visual, gostaria que a interface do usuário fosse atraente e seguisse os fundamentos de design visual.
+
  *Critérios de Aceitação:
-   [ ]A interface do usuário deve ser estéticamente agradável e seguir uma identidade visual consistente.
-   [ ]Deve ser aplicado um design visualmente atraente aos elementos da página, como botões, menus e cartões de campeões.
+
+   [x]A interface do usuário deve ser estéticamente agradável e seguir uma identidade visual consistente.
+   
+   [x]Deve ser aplicado um design visualmente atraente aos elementos da página, como botões, menus e cartões de campeões.
