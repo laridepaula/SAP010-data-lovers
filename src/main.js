@@ -116,7 +116,7 @@ const config = {
   data: {
     labels: categoriasCampeoes.map(tagTraduzida),
     datasets: [{
-      label: 'Número de Campeões',
+      label: 'Porcentagem de campeões',
       data: porcentagemCampeoesPorCategoria,
       backgroundColor: [
         'rgba(14, 113, 1, 1)',
@@ -153,7 +153,7 @@ const config = {
 
 // eslint-disable-next-line no-undef
 new Chart(document.getElementById('grafico-campeoes'), config);
-
+/*
 document.querySelector('.btn_icon_header').addEventListener('click', toggleSidebar);
 document.querySelector('#icone-x').addEventListener('click', toggleSidebar);
 
@@ -171,4 +171,4 @@ function toggleSidebar(){
     navigationHeader.style.marginLeft = '-100vw';
     navigationHeader.style.animationName = '';
   }
-}
+}*/
