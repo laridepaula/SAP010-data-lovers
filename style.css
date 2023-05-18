@@ -252,7 +252,7 @@ li:hover{
   object-fit: cover;
   display: flex;
   align-items: center;
-  transition: transform 0.3s ease-in-out;
+  transform: rotateY(0deg);
 }
 
 #mostrarTodos{
@@ -272,14 +272,15 @@ li:hover{
   height: 100%;
   backface-visibility: hidden;
   position: absolute;
+  transition: transform 0.3s ease-in-out;
 }
 .card-verso{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transform: rotateY(-180deg);
-  transition: transform 0.3s ease-in-out;
+  transform: rotateY(180deg);
+  
 }
 
 .card{
@@ -291,7 +292,7 @@ li:hover{
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transition: transform 0.3s ease-in-out;
+  
 }
 
 .card h2{
@@ -306,10 +307,10 @@ li:hover{
   text-align: center;
 }
 .card:hover .card-frente {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .card:hover .card-verso {
-  transform: rotateY(0);
+  transform: rotateY(0deg);
 }
 .cards{
   width: 250px;
@@ -343,7 +344,7 @@ li:hover{
   }
 
   .selecionar:hover, .selecionar2:hover{
-    color: rgb(90, 88, 34);
+    color: rgb(90, 84, 34);
   }
 
   .container{
