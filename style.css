@@ -6,13 +6,14 @@
   padding: 0px;
 }
 
+
+/* cabeçalho e navegação*/
 header {
   height: 60px;
   background: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  font-family: 'Ysabeau', sans-serif;
 }
 
 section.cabecalho {
@@ -45,6 +46,7 @@ nav a:hover {
   color: rgb(230, 220, 89);
 }
 
+
 .nav-list{
   list-style: none;
   display: flex;
@@ -62,6 +64,71 @@ nav a:hover {
 .checkbox {
 display: none;
 }
+
+
+@media screen and (max-width: 800px) {
+  .nav-list {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #000000;
+    text-align: center;
+    width: 50%;
+    height: calc(100vh - 60px);
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+  }
+  .nav-list a {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+  .label-menu {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #f7f6f5;
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+  /* desenhar o menu hamburguer, assim faz os tracinhos*/
+  .hamburger {
+    border-top: 0.125rem solid;
+    width: 1.25rem;
+  }
+  .hamburger::after,
+  .hamburger::before {
+    content: " ";
+    display: block;
+    width: 1.25rem;
+    height: 0.125rem;
+    background: currentColor;
+    margin-top: 0.3125rem;
+    position: relative;
+    transition: 0.3s;
+  }
+  .checkbox:checked ~ .nav-list {
+    height: calc(100vh - 60px);
+    visibility: visible;
+    overflow-y: auto;
+  }
+  /*animar o menu hamburguer*/
+  .checkbox:checked ~ .label-menu .hamburger {
+    border-top-color: transparent;
+  }
+  .checkbox:checked ~ .label-menu .hamburger::before {
+    transform: rotate(135deg);
+  }
+  .checkbox:checked ~ .label-menu .hamburger::after {
+    transform: rotate(-135deg);
+    top: -0.4375rem;
+  }
+}
+
 
 main{
   background: rgb(238, 235, 235);
@@ -120,7 +187,7 @@ main{
   background: #3B3A3A;
   width: 95%;
   height: 55px;
-  border-radius: 40px 10px 40px 10px;
+  border-radius: 40px 0px 40px 0px;
 }
 
 .container{
@@ -135,7 +202,7 @@ main{
   padding: 7px;
   background: rgb(184, 181, 85);
   border: none;
-  border-radius: 30px 10px 30px 10px;
+  border-radius: 25px 0px 25px 0px;
 }
 
 #buscar::placeholder{
@@ -173,7 +240,7 @@ li:hover{
   padding: 7px 35px;
   background: rgb(184, 181, 85);
   border: none;
-  border-radius: 30px 10px 30px 10px;
+  border-radius: 5px 0px 25px 0px;
   cursor: pointer;
 }
 
@@ -185,7 +252,7 @@ li:hover{
   object-fit: cover;
   display: flex;
   align-items: center;
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 #mostrarTodos{
@@ -212,11 +279,11 @@ li:hover{
   justify-content: center;
   align-items: center;
   transform: rotateY(-180deg);
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card{
-  background-color: rgb(7, 15, 33);
+  background-color: rgb(9, 7, 43);
   color: white;
   height: 320px;
   cursor: pointer;
@@ -224,7 +291,7 @@ li:hover{
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card h2{
@@ -232,7 +299,7 @@ li:hover{
 }
 
 .card:hover{
-  background-color: rgb(10, 38, 104);
+  background-color: rgb(0, 1, 32);
 }
 
 .card:hover h2{
@@ -252,13 +319,13 @@ li:hover{
   perspective: 1000px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   #buscar{
     outline: 0;
     width: 80%;
     background: rgb(184, 181, 85);
     border: none;
-    border-radius: 30px 10px 30px 10px;
+    border-radius: 25px 0px 25px 0px;
   }
 
   .selecionar, .menu2{
@@ -266,7 +333,7 @@ li:hover{
     padding: 6% 25%;
     background: rgb(184, 181, 85);
     border: none;
-    border-radius: 30px 10px 30px 10px;
+    border-radius: 25px 0px 25px 0px;
     cursor: pointer;
     color: rgb(59, 59, 58);
   }
@@ -293,72 +360,13 @@ li:hover{
   }
 }
 
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   #buscar{
     outline: 0;
     width: 60px;
     background: rgb(184, 181, 85);
     border: none;
-    border-radius: 30px 10px 30px 10px;
-  }
-
-  .nav-list {
-    display: block;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: #000000;
-    text-align: center;
-    width: 50%;
-    height: calc(100vh - 60px);
-    z-index: 1;
-    visibility: hidden;
-    overflow-y: hidden;
-    transition: 0.5s;
-  }
-  .nav-list a {
-    padding: 1rem 0;
-    margin-inline: 1rem;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.16);
-    border-radius: 0;
-  }
-  .label-menu {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: #f7f6f5;
-    padding: 1rem 0;
-    cursor: pointer;
-  }
-  .hamburger {
-    border-top: 0.125rem solid;
-    width: 1.25rem;
-  }
-  .hamburger::after,
-  .hamburger::before {
-    content: " ";
-    display: block;
-    width: 1.25rem;
-    height: 0.125rem;
-    background: currentColor;
-    margin-top: 0.3125rem;
-    position: relative;
-    transition: 0.3s;
-  }
-  .checkbox:checked ~ .nav-list {
-    height: calc(100vh - 60px);
-    visibility: visible;
-    overflow-y: auto;
-  }
-  .checkbox:checked ~ .label-menu .hamburger {
-    border-top-color: transparent;
-  }
-  .checkbox:checked ~ .label-menu .hamburger::before {
-    transform: rotate(135deg);
-  }
-  .checkbox:checked ~ .label-menu .hamburger::after {
-    transform: rotate(-135deg);
-    top: -0.4375rem;
+    border-radius: 25px 0px 25px 0px;
   }
 
   .titleComeco{
@@ -381,7 +389,7 @@ li:hover{
     padding: 7px;
     background: rgb(184, 181, 85);
     border: none;
-    border-radius: 30px 10px 30px 10px;
+    border-radius: 25px 0px 25px 0px;
     cursor: pointer;
     color: rgb(59, 59, 58);
   }
