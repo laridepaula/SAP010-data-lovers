@@ -7,7 +7,7 @@
 * [3. Usuários e Necessidades do Usuário](#3usuários-e-necessidades-do-usuário)
 * [4. Instruções de Uso](#4instruções-de-uso)
 * [5. Histórias de Usuário](#5histórias-de-usuário)
-* [6. Acesse a Pagina](#https://laridepaula.github.io/SAP010-data-lovers/)
+* [6. Acesse a Pagina](https://laridepaula.github.io/SAP010-data-lovers/)
 
 
 ## 1. Resumo do Projeto
