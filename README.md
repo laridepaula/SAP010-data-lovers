@@ -2,17 +2,18 @@
 
 ## Índice
 
-* [1. Resumo do projeto]()
-* [2. Protótipo]()
-* [3. Usuários e Necessidades do Usuário]()
-* [4. Instruções de Uso]()
-* [5. Histórias de Usuário]()
+* [1. Resumo do projeto](#1-resumo-do-projeto)
+* [2. Protótipo](#2protótipo)
+* [3. Usuários e Necessidades do Usuário](#3usuários-e-necessidades-do-usuário)
+* [4. Instruções de Uso](#4instruções-de-uso)
+* [5. Histórias de Usuário](#5histórias-de-usuário)
+* [6. Acesse a Pagina](#https://laridepaula.github.io/SAP010-data-lovers/)
 
 
 ## 1. Resumo do Projeto
 
 Este projeto consiste no desenvolvimento de uma página web que serve como um inventário dos campeões do jogo League of Legends (LoL). O objetivo é fornecer aos usuários informações sobre as habilidades e funções de cada campeão, permitindo que eles conheçam melhor o jogo e façam escolhas estratégicas.
-### <h3 align="center"> 💻 A página web está disponível na seguinte url: https://laridepaula.github.io/SAP010-data-lovers/</h3>
+### <h4 align="center"> 💻 A página web está disponível na seguinte url: https://laridepaula.github.io/SAP010-data-lovers/</h4>
 
 
 ## 2.Protótipo
