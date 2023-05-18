@@ -273,6 +273,7 @@ li:hover{
   backface-visibility: hidden;
   position: absolute;
   transition: transform 0.3s ease-in-out;
+  box-shadow: 10px 9px 15px -6px rgba(0,0,0,0.73);
 }
 .card-verso{
   display: flex;
