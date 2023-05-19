@@ -40,6 +40,7 @@ function mostraCards(campeoes) {
         <div class="card-verso">
           <ul class="info-do-card">
             <h3 class="nome-verso"><strong>${campeao.name.toUpperCase()}</strong></h3>
+            <h5>${campeao.title.toUpperCase()}</h5>
             <li>Ataque: ${campeao.info.attack}</li>
             <li>Defesa: ${campeao.info.defense}</li>
             <li>Magia: ${campeao.info.magic}</li>
